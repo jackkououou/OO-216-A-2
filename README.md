@@ -5,12 +5,12 @@ Read Operator Overloading in your  book and the lecture posted under Pages with 
 Define a Fraction class similar to the one shown in earlier modules with num and den as its private data.
 Include a constructor to initialize the fraction to 0/1, a copy constructor, a destructor, and overloading
 functions to overload the assignment operator =, the comparison operators <, >, ==, !=, arithmetic
-operators +, +=, -, -=, *, *=, /, /=, as well as friend functions (non-member) to overload << and >> to output
-and input a fraction (see book example). Also, include a private member function called reduce() that gets called 
-after arithmetic operations to reduce the frraction. +, -, *, / must return the result of the operation; e.g.: the
-sum or difference of the two fractions. +=, -=, *= and /= must assign the result of the operation to the object that's 
-invoking the operation; i.e.: frac1 += frac2 must modify frac1 to make it equal to the sum of the two fractions,
-but frac1 + frac2 must simply return the sum.
+operators +, +=, -, -=, *, *=, /, /=, as well as friend functions (non-member) to overload << and >> to 
+output and input a fraction (see book example). Also, include a private member function called reduce() 
+that gets called after arithmetic operations to reduce the frraction. +, -, *, / must return the result 
+of the operation; e.g.: the sum or difference of the two fractions. +=, -=, *= and /= must assign the
+result of the operation to the object that's invoking the operation; i.e.: frac1 += frac2 must modify 
+frac1 to make it equal to the sum of the two fractions,but frac1 + frac2 must simply return the sum.
 
 If n1/d1 and n2/d2 are two fractions, their sum fraction's numertor is: n1 * d2 + n2 * d1 and its 
 denominator is d1 * d2. To compare the two fractions, you can compare n1 * d2 with n2 * d1.
