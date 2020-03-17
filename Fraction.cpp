@@ -3,6 +3,21 @@
 
 using namespace std;
 
+FracList::FracList()
+{
+	size = 0;
+	Fpntr = NULL;
+}
+FracList::FracList(const FracList& obj)
+{
+	size = obj.size;
+	Fpntr = new Fraction[size];
+}
+FracList::~FracList()
+{
+	size = NULL;
+	delete Fpntr;
+}
 Fraction::Fraction()
 {
 	num = 0;
@@ -132,6 +147,7 @@ Fraction Fraction::operator*(const Fraction& right)
 
 	temp.num = n1 * n2;
 	temp.den = d1 * d2;
+	temp.reduce();
 	return temp;
 }
 Fraction Fraction::operator/(const Fraction& right)
@@ -142,6 +158,7 @@ Fraction Fraction::operator/(const Fraction& right)
 
 	temp.num = n1 * d2;
 	temp.den = d1 * n2;
+	temp.reduce();
 	return temp;
 }
 bool Fraction::operator==(const Fraction& right)

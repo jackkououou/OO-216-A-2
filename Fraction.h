@@ -1,15 +1,15 @@
 #ifndef FRACTION
 #define FRACTION
-//class FracList
-//{
-//private:
-//	int size;
-//	Fraction* Fpntr;
-//public:
-//	FracList();
-//	FracList(const FracList& obj);
-//	~FracList();
-//};
+class FracList
+{
+private:
+	int size;
+	Fraction* Fpntr;
+public:
+	FracList();
+	FracList(const FracList& obj);
+	~FracList();
+};
 class Fraction
 {
 	
